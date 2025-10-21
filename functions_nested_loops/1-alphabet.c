@@ -2,8 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
+
 /**
-*main - Entry point
+*print_alphabet - Entry point
 *prints the alphabet in lowercase
 *Return: always 0 (Succes)
 */
