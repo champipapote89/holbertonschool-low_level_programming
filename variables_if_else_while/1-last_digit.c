@@ -8,10 +8,11 @@
 */
 int main(void)
 {
-	int n;
+	int n = 0;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
+	printf("%d", n)
+
 	return (0);
 }
