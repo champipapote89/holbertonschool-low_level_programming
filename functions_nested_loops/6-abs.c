@@ -12,5 +12,5 @@
 */
 int _abs(int i)
 {
-return (unsigned int i);
+return ((unsigned int) i);
 }
