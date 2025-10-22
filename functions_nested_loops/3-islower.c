@@ -11,6 +11,9 @@
 int _islower(int c)
 {
 if (c<91 && c>64);
+{
+_putchar(c);
 return (1);
+}
 return (0);
 }
