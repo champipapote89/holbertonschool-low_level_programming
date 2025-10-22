@@ -7,14 +7,14 @@
 *print_last_digit - Entry point
 *@i: character to check
 *
-*Return: unsigned int i
+*Return: last digit
 *
 */
 int print_last_digit(int i)
 {
-int o = 0;
-int p = 0;
-o = i % 10;
-p = _putchar(o);
-return (p);
+if (i < 0)
+i = (i * (-1));
+i = i % 10;
+_putchar (i + '0');
+return (i);
 }
