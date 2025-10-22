@@ -13,6 +13,8 @@
 int print_last_digit(int i)
 {
 int o = 0;
+int p = 0;
 o = i % 10;
-return (o);
+p = _putchar(o);
+return (p);
 }
