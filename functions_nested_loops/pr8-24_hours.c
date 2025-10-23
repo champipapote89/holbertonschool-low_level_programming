@@ -10,7 +10,7 @@
 *Return
 *
 */
-void jack_bauer(void)
+void main(void)
 {
 int h = 0;
 int m = 0;
