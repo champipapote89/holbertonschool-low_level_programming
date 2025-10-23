@@ -5,14 +5,12 @@
 
 /**
 *add - Entry point
-*
-*
-*Return
+*@i: parameter i
+*@j: parameter j
+*Return: i + J
 *
 */
 int add(int i, int j)
 {
-_putchar(i);
-_putchar(j);
-;return(0);
+return (i + j);
 }
