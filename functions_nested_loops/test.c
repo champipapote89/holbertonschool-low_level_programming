@@ -5,18 +5,21 @@
 
 int main(void)
 {
-char i = 48;
-int j = 0;
-int l = 0;
-char k = 48;
-for (j = 0, i = 48; j <= 10, i <= 57; j++, i++)
+char i;
+int j;
+char k;
+for (j = 0; j < 10; j++)
 {
-for (l = 0, k = 48; l <= 10, k <= 57; l++, k++)
-{
-putchar(i);
-putchar('\n');
+putchar('0');
 }
 putchar('\n');
+for (i = 0; i < 10; i++)
+{
+for (k = '0'; k <= '9'; k++)
+{
+putchar(k);
+}
+putchar('\n');
+}
 return (0);
-}
 }
