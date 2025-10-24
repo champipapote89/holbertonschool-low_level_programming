@@ -13,7 +13,7 @@ int main(void)
 
 	while (n1 <= 9 && n2 <= 8 && n3 <= 9 && n4 <= 9)
 	{
-		if ((n3 * 10 + n4) > (n1 * 10 + n2) && n3 >= n1)
+		if ((n3 * 10) > (n1 * 10 + n2) && n3 >= n1)
 		{
 			putchar(48 + n1);
 			putchar(48 + n2);
