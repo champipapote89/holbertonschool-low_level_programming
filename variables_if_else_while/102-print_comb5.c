@@ -8,9 +8,7 @@
 */
 int main(void)
 {
-	int n1 = 0;
-	int n2 = 0;
-	int n3 = 0;
+	int n1, n2, n3 = 0;
 	int n4 = 1;
 
 	while (n1 <= 9 && n2 <= 8 && n3 <= 9 && n4 <= 9)
