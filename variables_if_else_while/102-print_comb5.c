@@ -8,8 +8,9 @@
 */
 int main(void)
 {
-    int n1 = 0, n2 = 1;
-    while (n1 <= 98 && n2 <= 99)
+	int n1 = 0, n2 = 1;
+
+	while (n1 <= 98 && n2 <= 99)
 	{
 		if (n2 > n1)
 		{
