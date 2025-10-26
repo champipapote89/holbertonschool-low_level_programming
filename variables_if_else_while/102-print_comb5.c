@@ -8,41 +8,26 @@
 */
 int main(void)
 {
-	int n1 = 0, n2 = 0, n3 = 0;
-	int n4 = 1;
-
-	while (n1 <= 9 && n2 <= 8 && n3 <= 9 && n4 <= 9)
+    int n1 = 0, n2 = 1;
+    while (n1 <= 98 && n2 <= 99)
 	{
-		if ((n3 * 10 + n4) > (n1 * 10 + n2))
+		if (n2 > n1)
 		{
-			putchar(48 + n1);
-			putchar(48 + n2);
+			putchar(48 + n1 / 10);
+			putchar(48 + n1 % 10);
 			putchar(' ');
-			putchar(48 + n3);
-			putchar(48 + n4);
-			if (n1 != 9 || n2 != 8 || n3 != 9 || n4 != 9)
+			putchar(48 + n2 / 10);
+			putchar(48 + n2 % 10);
+			if (n1 != 98 || n2 != 99)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 		}
-		n4++;
-		if (n4 > 9)
+		n2++;
+		if (n2 > 99)
 		{
-			n4 = n2;
-			n3++;
-		}
-		if (n3 > 9)
-		{
-			n3 = n1;
-			n4 = n2;
-			n2++;
-		}
-		if (n2 > 8)
-		{
-			n2 = 0;
-			n3 = n1;
-			n4 = n2;
+			n2 = n1;
 			n1++;
 		}
 	}
