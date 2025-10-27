@@ -4,10 +4,10 @@
 #include "main.h"
 
 /**
-*_isalpha - Entry point
+*_isupper - Entry point
 *@c: character to check
 *
-*Return: 1 if c s a letter, 0 otherwise
+*Return: 1 if c in upper, 0 otherwise
 *
 */
 int _isupper(int c)
