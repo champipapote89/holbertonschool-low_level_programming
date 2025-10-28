@@ -4,9 +4,9 @@
 #include "main.h"
 
 /**
-*print_triangle - Entry point
-*@size: size
-*print a triangle, followed by a new line.
+*reset_to_98 - Entry point
+*@n: parametre à pointer
+*take a pointer to an int as parameter and updates the value it points to to 98
 *Return: always 0 (Succes)
 */
 void reset_to_98(int *n)
