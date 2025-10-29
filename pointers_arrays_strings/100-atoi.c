@@ -46,16 +46,15 @@ int _atoi(char *s)
 			digit = s[i] - '0';
 			result = result * 10 + digit;
 		}
-		else if (result > INT_MAX || result < INT_MIN)
-		{
-			return (0);
-		}
 		i++;
 	}
 	if (neg % 2 == 1)
 	{
 		result = result * -1;
 	}
-
+	if (result > INT_MAX || result < INT_MIN)
+		{
+			result = 0;
+		}
 	return (result);
 }
