@@ -44,9 +44,12 @@ int _atoi(char *s)
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
-			if (result > INT_MAX || result < INT_MIN)
+			if (result > (INT_MAX - digit) / 10)
 			{
-				result = 0;
+				if (neg % 2 == 1)
+					return (INT_MIN);
+				else
+					return (INT_MAX);
 			}
 			result = result * 10 + digit;
 		}
