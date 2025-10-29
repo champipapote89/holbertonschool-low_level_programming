@@ -36,14 +36,18 @@ int _atoi(char *s)
 		{
 			neg += 1;
 		}
-		if (s[i] >= '0' && s[i] <= '9')
+		else if ((s[i] < '0' || s[i] > '9') && result > 0)
+		{
+			break;
+		}
+		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			digit = s[i] - '0';
 			result = result * 10 + digit;
 		}
 		i++;
 	}
-	if (neg % 2 == 0)
+	if (neg % 2 == 1)
 	{
 		result = result * -1;
 	}
