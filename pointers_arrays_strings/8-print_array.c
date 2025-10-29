@@ -2,35 +2,25 @@
 #include <time.h>
 #include <stdio.h>
 #include "main.h"
-
-/**
- * _strlen - returns the length of a string
- * @s: pointer to the string
- *
- * Return: length of the string
- */
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-	return (len);
-}
 /**
  * print_array - print half of a string, followed by a new line.
  *@a: array
  *@n: number of elements
  */
- void print_array(int *a, int n)
- {
-	int len = _strlen(a);
+void print_array(int *a, int n)
+{
 	int i = 0;
 
-	for(i = 0; i < len; i++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d", a[n]);
+		if (i < n - 1)
+		{
+			printf("%d, ", a[i]);
+		}
+		else
+		{
+			printf("%d", a[i]);
+		}
 	}
- }
+	printf("\n");
+}
