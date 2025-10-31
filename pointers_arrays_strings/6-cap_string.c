@@ -13,7 +13,7 @@ char *cap_string(char *c)
 
 	while (*c != '\0')
 	{
-		if (*c == 2)
+		if (*c == *start)
 		{
 			if (*c < 123 && *c > 96)
 			{
