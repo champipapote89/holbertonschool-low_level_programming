@@ -10,8 +10,7 @@
 char *cap_string(char *c)
 {
 	char *start = c;
-
-	while (*c != '\0')
+while (*c != '\0')
 	{
 		if (*c == *start)
 		{
