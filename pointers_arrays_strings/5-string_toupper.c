@@ -13,11 +13,7 @@ char *string_toupper(char *c)
 
 	while (*c != '\0')
 	{
-		if (*c < 91 && *c > 64)
-		{
-			*c = *c;
-		}
-		else if (*c < 123 && *c > 96)
+		if (*c < 123 && *c > 96)
 		{
 			*c = *c - 32;
 		}
