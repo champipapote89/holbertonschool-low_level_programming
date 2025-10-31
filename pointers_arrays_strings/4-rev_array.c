@@ -3,13 +3,14 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * rev_string - reverse a string
- * @s: pointer to the string
+ * reverse_array - reverse the content of an array of integers
+ * @a: pointer to the array
+ *@n: numbers of array's  elements
  */
 void reverse_array(int *a, int n)
 {
 	int start = 0;
-	int end = n;
+	int end = n - 1;
 	int temp = 0;
 
 	while (start < end)
@@ -21,4 +22,3 @@ void reverse_array(int *a, int n)
 		end--;
 	}
 }
-
