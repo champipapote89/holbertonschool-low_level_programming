@@ -13,7 +13,7 @@ char *leet(char *c)
 	int i = 0;
 	char let[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	char num[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
-	
+
 	while (*c != '\0')
 	{
 		i = 0;
@@ -25,7 +25,7 @@ char *leet(char *c)
 			}
 			i++;
 		}
-		c++;	
+		c++;
 	}
 	return (start);
 }
